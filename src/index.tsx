@@ -20,3 +20,14 @@ const TruVideoReactImageSdk = NativeModules.TruVideoReactImageSdk
 export function multiply(a: number, b: number): Promise<number> {
   return TruVideoReactImageSdk.multiply(a, b);
 }
+
+export function launchImageEdit(
+  inputPath: string,
+  outputPath: string
+): Promise<string> {
+  return TruVideoReactImageSdk.launchImageEdit(inputPath, outputPath);
+}
+
+export function getFilePath(fileName: String): Promise<string> {
+  return TruVideoReactImageSdk.getResultPath(fileName);
+}
