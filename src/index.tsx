@@ -6,8 +6,8 @@ const LINKING_ERROR =
   '- You rebuilt the app after installing the package\n' +
   '- You are not using Expo Go\n';
 
-const TruvideoReactImageSdk = NativeModules.TruvideoReactImageSdk
-  ? NativeModules.TruvideoReactImageSdk
+const TruVideoReactImageSdk = NativeModules.TruVideoReactImageSdk
+  ? NativeModules.TruVideoReactImageSdk
   : new Proxy(
       {},
       {
@@ -18,5 +18,16 @@ const TruvideoReactImageSdk = NativeModules.TruvideoReactImageSdk
     );
 
 export function multiply(a: number, b: number): Promise<number> {
-  return TruvideoReactImageSdk.multiply(a, b);
+  return TruVideoReactImageSdk.multiply(a, b);
+}
+
+export function launchImageEdit(
+  inputPath: string,
+  outputPath: string
+): Promise<string> {
+  return TruVideoReactImageSdk.launchImageEdit(inputPath, outputPath);
+}
+
+export function getFilePath(fileName: String): Promise<string> {
+  return TruVideoReactImageSdk.getResultPath(fileName);
 }
