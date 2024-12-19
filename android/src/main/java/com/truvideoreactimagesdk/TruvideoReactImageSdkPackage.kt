@@ -8,7 +8,7 @@ import com.facebook.react.uimanager.ViewManager
 
 class TruvideoReactImageSdkPackage : ReactPackage {
   override fun createNativeModules(reactContext: ReactApplicationContext): List<NativeModule> {
-    return listOf(TruvideoReactImageSdkModule(reactContext))
+    return listOf(TruVideoReactImageSdkModule(reactContext))
   }
 
   override fun createViewManagers(reactContext: ReactApplicationContext): List<ViewManager<*, *>> {
