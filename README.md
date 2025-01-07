@@ -1,17 +1,12 @@
-# truvideo-react-video-sdk
+# truvideo-react-image-sdk
 
 none
 
 ## Installation
 
 ```sh
-"dependencies": {
-  // replace token with your personal access token
-    "truvideo-react-image-sdk": "git+https://<token>@github.com/Truvideo/TruVideoReactImageSdk.git#release-version-76"
-}
+npm install https://github.com/Truvideo/TruVideoReactImageSdk.git
 
-//or
-npm install truvideo-react-image-sdk
 ```
 
 ## Usage
