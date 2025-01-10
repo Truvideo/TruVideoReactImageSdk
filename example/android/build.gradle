@@ -9,7 +9,6 @@ buildscript {
         } while (searchDir = searchDir.getParent())
         throw new GradleException("Could not find `react-native-test-app`");
     }())
-
     repositories {
         mavenCentral()
         google()

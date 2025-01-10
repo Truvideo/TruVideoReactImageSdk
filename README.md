@@ -1,22 +1,37 @@
 # truvideo-react-image-sdk
 
-truvideo image module for performing operations. 
+none
 
 ## Installation
 
 ```sh
-npm install truvideo-react-image-sdk
+npm install https://github.com/Truvideo/TruVideoReactImageSdk.git
+
 ```
 
 ## Usage
 
 
 ```js
-import { multiply } from 'truvideo-react-image-sdk';
+import { launchImageEdit,getFilePath } from 'truvideo-react-image-sdk';
 
 // ...
 
-const result = await multiply(3, 7);
+launchImageEdit(inputPath: string, outputPath: string)
+      .then((result) => {
+        console.log('result', result);
+      })
+      .catch((error) => {
+        console.log('error', error);
+      });
+getFilePath(fileName: string)
+      .then((result) => {
+        console.log('result', result);
+      })
+      .catch((error) => {
+        console.log('error', error);
+      });
+
 ```
 
 
