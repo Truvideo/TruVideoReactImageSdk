@@ -40,3 +40,31 @@ allprojects {
         google()
     }
 }
+
+subprojects {
+    afterEvaluate { project ->
+        if (project.hasProperty("android")) {
+            project.android {
+                if (project.android.hasProperty("defaultConfig")) {
+
+                    def currentMinSdk = project.android.defaultConfig.minSdkVersion.apiLevel ?: 0
+                    def currentCompileSdk = project.android.compileSdkVersion?.toString()?.replace("android-", "")?.toInteger() ?: 0
+                    def currentTargetSdk = project.android.defaultConfig.targetSdkVersion?.apiLevel ?: 0
+
+                    defaultConfig {
+                        if (currentMinSdk < 24) {
+                            minSdkVersion 24
+                        }
+                        if (currentTargetSdk < 34) {
+                            targetSdkVersion 34
+                        }
+                    }
+
+                    if (currentCompileSdk < 34) {
+                        compileSdkVersion 34
+                    }
+                }
+            }
+        }
+    }
+}
