@@ -19,7 +19,7 @@ class ImageActivity : ComponentActivity() {
 
     launcher = registerForActivityResult(TruvideoSdkImageEditContract()){
         resultPathh: String? ->
-        mainPromise!!.resolve(resultPathh)
+        mainPromise!!.resolve(resultPathh?:"")
          finish()
     }
     launcher!!.launch(TruvideoSdkImageEditParams(inputPath!!,outputPath!!))
