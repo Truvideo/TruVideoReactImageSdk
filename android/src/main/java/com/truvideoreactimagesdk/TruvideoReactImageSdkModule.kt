@@ -30,10 +30,18 @@ class TruVideoReactImageSdkModule(reactContext: ReactApplicationContext) :
   }
 
   @ReactMethod
-  fun launchImageEdit(inputPath : String,outputPath: String,promise: Promise){
+fun launchImageEdit(inputPath : String, outputPath: String, promise: Promise){
     mainPromise = promise
-    currentActivity!!.startActivity(Intent(reactApplicationContext, ImageActivity::class.java).putExtra("inputPath",inputPath).putExtra("outputPath",outputPath))
-  }
+    val activity = reactApplicationContext.currentActivity
+    if (activity != null) {
+        val intent = Intent(reactApplicationContext, ImageActivity::class.java)
+        intent.putExtra("inputPath", inputPath)
+        intent.putExtra("outputPath", outputPath)
+        activity.startActivity(intent)
+    } else {
+        promise.reject("E_ACTIVITY_DOES_NOT_EXIST", "Activity doesn't exist")
+    }
+}
 
   companion object {
     var mainPromise : Promise? = null
