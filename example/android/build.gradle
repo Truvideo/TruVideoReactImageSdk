@@ -15,8 +15,18 @@ buildscript {
     }
 
     dependencies {
+        // Override AGP version to 8.6.0+ to support compileSdk 35
+        // Add AGP first so it takes precedence
+        classpath("com.android.tools.build:gradle:8.6.1")
+        // Let React Native use its default Kotlin version (1.9.24) for compatibility
+        // We'll use -Xskip-metadata-version-check flag to handle 2.2.0 metadata
         getReactNativeDependencies().each { dependency ->
-            classpath(dependency)
+            def depString = dependency.toString()
+            // Skip AGP from React Native dependencies since we're using a newer version
+            if (!depString.contains("com.android.tools.build:gradle") && 
+                !depString.contains("android-gradle-plugin")) {
+                classpath(dependency)
+            }
         }
     }
 }
@@ -45,10 +55,19 @@ subprojects {
     afterEvaluate { project ->
         if (project.hasProperty("android")) {
             project.android {
-                if (project.android.hasProperty("defaultConfig")) {
-
-                    def currentMinSdk = project.android.defaultConfig.minSdkVersion.apiLevel ?: 0
+                // Set compileSdk first before accessing it
+                if (!project.android.hasProperty("compileSdkVersion") || 
+                    project.android.compileSdkVersion == null) {
+                    compileSdkVersion 35
+                } else {
                     def currentCompileSdk = project.android.compileSdkVersion?.toString()?.replace("android-", "")?.toInteger() ?: 0
+                    if (currentCompileSdk < 35) {
+                        compileSdkVersion 35
+                    }
+                }
+                
+                if (project.android.hasProperty("defaultConfig")) {
+                    def currentMinSdk = project.android.defaultConfig.minSdkVersion?.apiLevel ?: 0
                     def currentTargetSdk = project.android.defaultConfig.targetSdkVersion?.apiLevel ?: 0
 
                     defaultConfig {
@@ -59,10 +78,15 @@ subprojects {
                             targetSdkVersion 34
                         }
                     }
-
-                    if (currentCompileSdk < 34) {
-                        compileSdkVersion 34
-                    }
+                }
+            }
+        }
+        
+        // Add Kotlin compiler flag to skip metadata version check for all Kotlin projects
+        if (project.hasProperty("kotlin")) {
+            project.tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
+                kotlinOptions {
+                    freeCompilerArgs += ["-Xskip-metadata-version-check"]
                 }
             }
         }

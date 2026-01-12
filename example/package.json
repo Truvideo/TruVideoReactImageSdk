@@ -11,6 +11,7 @@
     "start": "react-native start"
   },
   "dependencies": {
+    "@trunpm/truvideo-react-image-sdk": "workspace:*",
     "react": "18.3.1",
     "react-native": "0.75.4"
   },
