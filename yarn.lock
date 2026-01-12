@@ -3027,6 +3027,35 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@trunpm/truvideo-react-image-sdk@workspace:*, @trunpm/truvideo-react-image-sdk@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@trunpm/truvideo-react-image-sdk@workspace:."
+  dependencies:
+    "@commitlint/config-conventional": ^17.0.2
+    "@evilmartians/lefthook": ^1.5.0
+    "@react-native/eslint-config": ^0.73.1
+    "@release-it/conventional-changelog": ^5.0.0
+    "@types/jest": ^29.5.5
+    "@types/react": ^18.2.44
+    commitlint: ^17.0.2
+    del-cli: ^5.1.0
+    eslint: ^8.51.0
+    eslint-config-prettier: ^9.0.0
+    eslint-plugin-prettier: ^5.0.1
+    jest: ^29.7.0
+    prettier: ^3.0.3
+    react: 18.3.1
+    react-native: 0.75.4
+    react-native-builder-bob: ^0.30.2
+    release-it: ^15.0.0
+    turbo: ^1.10.7
+    typescript: ^5.2.2
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  languageName: unknown
+  linkType: soft
+
 "@tsconfig/node10@npm:^1.0.7":
   version: 1.0.12
   resolution: "@tsconfig/node10@npm:1.0.12"
@@ -3171,11 +3200,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 25.0.3
-  resolution: "@types/node@npm:25.0.3"
+  version: 25.0.6
+  resolution: "@types/node@npm:25.0.6"
   dependencies:
     undici-types: ~7.16.0
-  checksum: b5e0146eafe208e2f1c1167fd6078a460ace823ad1da61967ec70b8d7521bd6dd26f3cd945796effac48ef4b3df4d8d57d03e9eefd5f2903f6c1d6daf84a9a79
+  checksum: 21a75e51758e23183c43ad3542681abd35d7ae09dc84e5a3b0a2bcfb5778681ad155023dc86fe8095c692d2823af90ed18d3af0c39d991ef2f246585bff27962
   languageName: node
   linkType: hard
 
@@ -3989,11 +4018,11 @@ __metadata:
   linkType: hard
 
 "baseline-browser-mapping@npm:^2.9.0":
-  version: 2.9.13
-  resolution: "baseline-browser-mapping@npm:2.9.13"
+  version: 2.9.14
+  resolution: "baseline-browser-mapping@npm:2.9.14"
   bin:
     baseline-browser-mapping: dist/cli.js
-  checksum: 657db684a65df0d86b9011352a79891091b0d28251dd5a9011f7793fadff206c01ba9cfd72e34d80bc1c53e955eff4379944afd2d926693b29ccae8d4a79b290
+  checksum: c760c7cb5090b17c91aea2d7ad633d61491fea77f4eea1b2141b2b0d441ac887d3b433494c50e1490c2ba403e62e05606ad438a396c60bb41562c898a9fd7c6d
   languageName: node
   linkType: hard
 
@@ -4310,9 +4339,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001759":
-  version: 1.0.30001763
-  resolution: "caniuse-lite@npm:1.0.30001763"
-  checksum: ea6b1492b30ffe532c47cae011f27ab043293f1d67d54355df579a7eae35f4bdb3752cc7caa9db6e0a42e08b07aa694f88e2b39cd4baf7b5590eb67aa7d16346
+  version: 1.0.30001764
+  resolution: "caniuse-lite@npm:1.0.30001764"
+  checksum: 10cfa46c5d11659d7c9c5151213b00b27876da66723f3c757e3f3294de1c477d3a89fff0efe03d0d787727fea2ca27910a0b68a5ac69483aedd474827eb52b96
   languageName: node
   linkType: hard
 
@@ -6460,9 +6489,9 @@ __metadata:
   linkType: hard
 
 "flow-parser@npm:0.*":
-  version: 0.295.0
-  resolution: "flow-parser@npm:0.295.0"
-  checksum: b792993dc4ba1c088a689c79629fdabc2445be0a00e1814b01e8443509f577194b6b48ba27929a3c954f52a345b1c7ee7df586021d5292cf7f8880c984ecc67e
+  version: 0.296.1
+  resolution: "flow-parser@npm:0.296.1"
+  checksum: a9f7291a05753d9cb0374f8971fff088063caf854abbd7c08d0774cd131b8e7f358d2adaab87abf2681c475ade52fcb5fb20a6f4b55daabc2b08994f31d1f490
   languageName: node
   linkType: hard
 
@@ -12487,39 +12516,11 @@ __metadata:
     "@react-native/metro-config": 0.75.4
     "@react-native/typescript-config": 0.75.4
     "@rnx-kit/metro-config": ^2.0.0
+    "@trunpm/truvideo-react-image-sdk": "workspace:*"
     react: 18.3.1
     react-native: 0.75.4
     react-native-builder-bob: ^0.30.2
     react-native-test-app: ^3.10.15
-  languageName: unknown
-  linkType: soft
-
-"truvideo-react-image-sdk@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "truvideo-react-image-sdk@workspace:."
-  dependencies:
-    "@commitlint/config-conventional": ^17.0.2
-    "@evilmartians/lefthook": ^1.5.0
-    "@react-native/eslint-config": ^0.73.1
-    "@release-it/conventional-changelog": ^5.0.0
-    "@types/jest": ^29.5.5
-    "@types/react": ^18.2.44
-    commitlint: ^17.0.2
-    del-cli: ^5.1.0
-    eslint: ^8.51.0
-    eslint-config-prettier: ^9.0.0
-    eslint-plugin-prettier: ^5.0.1
-    jest: ^29.7.0
-    prettier: ^3.0.3
-    react: 18.3.1
-    react-native: 0.75.4
-    react-native-builder-bob: ^0.30.2
-    release-it: ^15.0.0
-    turbo: ^1.10.7
-    typescript: ^5.2.2
-  peerDependencies:
-    react: "*"
-    react-native: "*"
   languageName: unknown
   linkType: soft
 
@@ -13073,14 +13074,14 @@ __metadata:
   linkType: hard
 
 "vm2@npm:^3.9.19":
-  version: 3.10.0
-  resolution: "vm2@npm:3.10.0"
+  version: 3.10.1
+  resolution: "vm2@npm:3.10.1"
   dependencies:
     acorn: ^8.14.1
     acorn-walk: ^8.3.4
   bin:
     vm2: bin/vm2
-  checksum: 7c9a65baeae84718e2888538d5c68bc6cb53a919492f0113fe656aa11da977f8da6b0e4f7044ee459859b01d7738146d0c12a6f0de65a1c9f26fcac3e53134b9
+  checksum: 5bcd0e781d15679d846f7fe79669f046fcad786f9d039a51c68808b35d956828760c38e1db25ed061490db17e3fd5e6fe146def51af501128735435fb7a7c95b
   languageName: node
   linkType: hard
 
