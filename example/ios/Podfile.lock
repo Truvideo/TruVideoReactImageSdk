@@ -1452,7 +1452,7 @@ PODS:
     - React-logger (= 0.75.4)
     - React-perflogger (= 0.75.4)
     - React-utils (= 0.75.4)
-  - ReactNativeHost (0.5.0):
+  - ReactNativeHost (0.5.15):
     - DoubleConversion
     - glog
     - RCT-Folly (= 2024.01.01.00)
@@ -1474,12 +1474,12 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - ReactTestApp-DevSupport (3.10.15):
+  - ReactTestApp-DevSupport (3.10.22):
     - React-Core
     - React-jsi
   - ReactTestApp-Resources (1.0.0-dev)
   - SocketRocket (0.7.0)
-  - truvideo-react-image-sdk (0.1.0):
+  - truvideo-react-image-sdk (1.0.0-beta.1):
     - DoubleConversion
     - glog
     - RCT-Folly (= 2024.01.01.00)
@@ -1767,11 +1767,11 @@ SPEC CHECKSUMS:
   React-utils: 76fd4e86f1f3a4217b86a70fd067ffad9984c669
   ReactCodegen: 6115e376793e0d3d5006889773df47607dde1918
   ReactCommon: 7d4342b3f8c0ed7e0ac14ae4da79d1fc5e650e0c
-  ReactNativeHost: 02b5405c5955ebcd32f7c00581eb06fa0e58a685
-  ReactTestApp-DevSupport: c100668d465a6f663a3350d51805f5e1ed4a1ee9
+  ReactNativeHost: 8f209b447b55daa198b9f389425db57690ea267c
+  ReactTestApp-DevSupport: 52ac76197e5accf579592aa3b9aa07fd0766f211
   ReactTestApp-Resources: 7db90c026cccdf40cfa495705ad436ccc4d64154
   SocketRocket: abac6f5de4d4d62d24e11868d7a2f427e0ef940d
-  truvideo-react-image-sdk: c5a2bf11883f86cb097569d798be31e8ccfa4b88
+  truvideo-react-image-sdk: 85e2a96a45d32f5a6dccad2fa68fe28efed5a57d
   truvideo-sdk-image: 7297b9863d594dd4ea3c7dd1b7629335c5ff5593
   Yoga: 055f92ad73f8c8600a93f0e25ac0b2344c3b07e6
 
