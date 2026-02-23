@@ -26,7 +26,7 @@ class TruVideoReactImageSdkModule(reactContext: ReactApplicationContext) :
   fun getResultPath(fileName: String,promise: Promise) {
     // get result path with dynamic name
     val basePath  = reactApplicationContext.filesDir
-    promise.resolve( File("$basePath/camera/$fileName").path)
+    promise.resolve( File("$basePath/$fileName").path)
   }
 
   @ReactMethod
