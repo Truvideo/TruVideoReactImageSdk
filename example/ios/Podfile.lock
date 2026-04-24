@@ -1,12 +1,4 @@
 PODS:
-  - AWSCognitoIdentityProvider (2.41.0):
-    - AWSCognitoIdentityProviderASF (= 2.41.0)
-    - AWSCore (= 2.41.0)
-  - AWSCognitoIdentityProviderASF (2.41.0):
-    - AWSCore (= 2.41.0)
-  - AWSCore (2.41.0)
-  - AWSS3 (2.41.0):
-    - AWSCore (= 2.41.0)
   - boost (1.84.0)
   - DoubleConversion (1.1.6)
   - FBLazyVector (0.75.4)
@@ -1487,6 +1479,27 @@ PODS:
     - React-jsi
   - ReactTestApp-Resources (1.0.0-dev)
   - SocketRocket (0.7.0)
+  - truvideo-react-core-sdk (1.0.0-beta.1):
+    - DoubleConversion
+    - glog
+    - RCT-Folly (= 2024.01.01.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-jsi
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
   - truvideo-react-image-sdk (1.0.0-beta.1):
     - DoubleConversion
     - glog
@@ -1507,19 +1520,8 @@ PODS:
     - ReactCodegen
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
-    - truvideo-sdk-core/Image (= 79.0.1)
+    - truvideo-react-core-sdk
     - Yoga
-  - truvideo-sdk-core/Core (79.0.1):
-    - AWSCognitoIdentityProvider
-    - AWSCognitoIdentityProviderASF
-    - AWSCore
-    - AWSS3
-  - truvideo-sdk-core/Image (79.0.1):
-    - AWSCognitoIdentityProvider
-    - AWSCognitoIdentityProviderASF
-    - AWSCore
-    - AWSS3
-    - truvideo-sdk-core/Core
   - Yoga (0.0.0)
 
 DEPENDENCIES:
@@ -1587,17 +1589,13 @@ DEPENDENCIES:
   - "ReactNativeHost (from `../node_modules/@rnx-kit/react-native-host`)"
   - ReactTestApp-DevSupport (from `../node_modules/react-native-test-app`)
   - ReactTestApp-Resources (from `..`)
+  - truvideo-react-core-sdk (from `../../../TruVideoReactCoreSdk`)
   - truvideo-react-image-sdk (from `../..`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
   trunk:
-    - AWSCognitoIdentityProvider
-    - AWSCognitoIdentityProviderASF
-    - AWSCore
-    - AWSS3
     - SocketRocket
-    - truvideo-sdk-core
 
 EXTERNAL SOURCES:
   boost:
@@ -1724,16 +1722,14 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-test-app"
   ReactTestApp-Resources:
     :path: ".."
+  truvideo-react-core-sdk:
+    :path: "../../../TruVideoReactCoreSdk"
   truvideo-react-image-sdk:
     :path: "../.."
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
-  AWSCognitoIdentityProvider: b7e2471bec75137ce392b9a8c60f3cee465c61bd
-  AWSCognitoIdentityProviderASF: d26fedd80485c2f0f308741e02c4a9093921ad22
-  AWSCore: ee7594bda3132cde8666328bf9a09d8770c1c100
-  AWSS3: 50da7408a26c1c2886d02968807f2a0b6bf936ca
   boost: 4cb898d0bf20404aab1850c656dcea009429d6c1
   DoubleConversion: 76ab83afb40bddeeee456813d9c04f67f78771b5
   FBLazyVector: 430e10366de01d1e3d57374500b1b150fe482e6d
@@ -1797,10 +1793,10 @@ SPEC CHECKSUMS:
   ReactTestApp-DevSupport: 42abce6b0c88dfb47c86e80aa22831b2abcc3144
   ReactTestApp-Resources: 7db90c026cccdf40cfa495705ad436ccc4d64154
   SocketRocket: abac6f5de4d4d62d24e11868d7a2f427e0ef940d
-  truvideo-react-image-sdk: 4665f53ce3b5df85a1a88dc0623bee4ce87d14ba
-  truvideo-sdk-core: c99cf00dc51fb0bf648a820161a0483bb9a491a2
+  truvideo-react-core-sdk: 76fa760ecbe32ca757821ef42518dda09fd6c886
+  truvideo-react-image-sdk: afb40358c8f4048634016b308f219badfe4e3ebb
   Yoga: 055f92ad73f8c8600a93f0e25ac0b2344c3b07e6
 
-PODFILE CHECKSUM: 6cb80da9d23a3958d2505be8a8b46e9ff52e0ef7
+PODFILE CHECKSUM: 14c2812b8b02b157361164df9f941f98676f2816
 
 COCOAPODS: 1.16.2

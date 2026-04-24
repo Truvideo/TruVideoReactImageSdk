@@ -1,0 +1,6 @@
+framework module TruvideoSdkImage {
+  umbrella header "TruvideoSdkImage.h"
+  export *
+
+  module * { export * }
+}

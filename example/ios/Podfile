@@ -9,3 +9,6 @@ require "#{ws_dir}/node_modules/react-native-test-app/test_app.rb"
 workspace 'TruvideoReactImageSdkExample.xcworkspace'
 
 use_test_app!
+
+pod 'truvideo-react-core-sdk',
+  :path => '../../../TruVideoReactCoreSdk'
