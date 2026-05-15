@@ -1479,7 +1479,7 @@ PODS:
     - React-jsi
   - ReactTestApp-Resources (1.0.0-dev)
   - SocketRocket (0.7.0)
-  - truvideo-react-core-sdk (1.0.0-beta.1):
+  - truvideo-react-core-sdk (1.0.0):
     - DoubleConversion
     - glog
     - RCT-Folly (= 2024.01.01.00)
@@ -1500,7 +1500,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - truvideo-react-image-sdk (1.0.0-beta.1):
+  - truvideo-react-image-sdk (1.0.0):
     - DoubleConversion
     - glog
     - RCT-Folly (= 2024.01.01.00)
@@ -1793,8 +1793,8 @@ SPEC CHECKSUMS:
   ReactTestApp-DevSupport: 42abce6b0c88dfb47c86e80aa22831b2abcc3144
   ReactTestApp-Resources: 7db90c026cccdf40cfa495705ad436ccc4d64154
   SocketRocket: abac6f5de4d4d62d24e11868d7a2f427e0ef940d
-  truvideo-react-core-sdk: 76fa760ecbe32ca757821ef42518dda09fd6c886
-  truvideo-react-image-sdk: afb40358c8f4048634016b308f219badfe4e3ebb
+  truvideo-react-core-sdk: f1f0efced715f6705369ba0a19be22332fc4e04b
+  truvideo-react-image-sdk: fe4e05f357268bd65d980c2a2d47b210cc48922c
   Yoga: 055f92ad73f8c8600a93f0e25ac0b2344c3b07e6
 
 PODFILE CHECKSUM: 14c2812b8b02b157361164df9f941f98676f2816
